@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: Bike
+
+  datasource:
+    url: jdbc:sqlserver://localhost:1433;databaseName=bikestore;encrypt=false;trustServerCertificate=true
+    username: sa
+    password: Bhuvan@data1208
+
+
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.SQLServer2012Dialect
+
+server:
+  port: 8080
