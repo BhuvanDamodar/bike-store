@@ -1,7 +1,7 @@
-package com.bikestore.Bike.Repository;
+package com.bikestore.Bike.repository;
 
-import com.bikestore.Bike.Entity.Brand;
-import com.bikestore.Bike.Repository.custom.BikeStoreCustomRepo;
+import com.bikestore.Bike.entity.Brand;
+import com.bikestore.Bike.repository.custom.BikeStoreCustomRepo;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 

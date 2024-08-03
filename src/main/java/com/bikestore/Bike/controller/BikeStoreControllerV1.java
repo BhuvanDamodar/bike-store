@@ -1,7 +1,7 @@
-package com.bikestore.Bike.Controller;
+package com.bikestore.Bike.controller;
 
-import com.bikestore.Bike.Entity.Brand;
-import com.bikestore.Bike.Service.BikeStoreService;
+import com.bikestore.Bike.entity.Brand;
+import com.bikestore.Bike.service.BikeStoreService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
