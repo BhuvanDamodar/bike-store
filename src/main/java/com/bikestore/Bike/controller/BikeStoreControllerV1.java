@@ -17,8 +17,8 @@ public class BikeStoreControllerV1 {
     private BikeStoreService bikeStoreService;
 
     @GetMapping("/brands")
-    public List<Brand> getAllBrands(){
-        return bikeStoreService.getAllBrands();
+    public String getAllBrands(){
+        return "This endpoint is secured";
     }
 
 }

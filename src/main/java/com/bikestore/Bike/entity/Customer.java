@@ -1,5 +1,6 @@
 package com.bikestore.Bike.entity;
 
+import com.bikestore.Bike.entity.enums.Role;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -15,10 +16,11 @@ import java.util.List;
 @Entity
 @AllArgsConstructor
 @NoArgsConstructor
-@Table(name = "sales.customers")
+@Table(name = "customers")
 public class Customer implements UserDetails {
 
     @Id
+    @GeneratedValue
     @Column(name = "customer_id")
     private Integer customerId;
 
