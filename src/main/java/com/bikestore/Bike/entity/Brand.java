@@ -1,4 +1,4 @@
-package com.bikestore.Bike.Entity;
+package com.bikestore.Bike.entity;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -8,7 +8,7 @@ import lombok.Data;
 
 @Entity
 @Data
-//@Table(name = "production.brands") --This is returning as production_brands
+@Table(name = "production.brands")
 public class Brand {
 
     @Id

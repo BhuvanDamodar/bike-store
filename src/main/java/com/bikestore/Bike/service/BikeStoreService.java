@@ -1,6 +1,6 @@
-package com.bikestore.Bike.Service;
+package com.bikestore.Bike.service;
 
-import com.bikestore.Bike.Entity.Brand;
+import com.bikestore.Bike.entity.Brand;
 import java.util.List;
 
 
