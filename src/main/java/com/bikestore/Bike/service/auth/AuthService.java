@@ -22,17 +22,12 @@ public class AuthService {
     private final JwtService jwtService;
     private final AuthenticationManager authenticationManager;
 
-    public AuthResponse registerCustomer(Customer customer) throws Exception {
+    public void registerCustomer(Customer customer) throws Exception {
         if(!isCustomerExist(customer)){
             String pass = passwordEncoder.encode(customer.getPassword());
             customer.setPassword(pass);
             customer.setRole(Role.CUSTOMER);
             customerRepo.save(customer);
-            String jwtToken = jwtService.generateToken(customer);
-
-            return AuthResponse.builder()
-                    .token(jwtToken)
-                    .build();
         } else {
             throw new Exception("User already exists");
         }

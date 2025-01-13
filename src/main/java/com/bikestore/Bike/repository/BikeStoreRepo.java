@@ -10,4 +10,5 @@ import java.util.List;
 public interface BikeStoreRepo extends JpaRepository<Brand, Integer>, BikeStoreCustomRepo {
     @Query(value = "select * from production.brands", nativeQuery = true)
     List<Brand> getAllBrands();
+
 }

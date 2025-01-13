@@ -17,4 +17,9 @@ public class BikeStoreImpl implements BikeStoreService {
     public List<Brand> getAllBrands() {
         return bikeStoreRepo.getAllBrands();
     }
+
+    @Override
+    public Brand addBrand(Brand brand) {
+        return bikeStoreRepo.save(brand);
+    }
 }

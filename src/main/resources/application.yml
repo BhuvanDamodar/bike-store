@@ -16,8 +16,8 @@ spring:
 
 server:
   port: 8080
-#  servlet:
-#    contextpath: /bikestore-services
+  servlet:
+    contextpath: /bikestore-services
 
 jwt:
   secret-key: "45c9b7797010ec4a78ebee418c999373601aef18c8795f1475b19f924f6f8262"

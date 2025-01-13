@@ -7,4 +7,6 @@ import java.util.List;
 public interface BikeStoreService {
 
     List<Brand> getAllBrands();
+
+    Brand addBrand(Brand brand);
 }

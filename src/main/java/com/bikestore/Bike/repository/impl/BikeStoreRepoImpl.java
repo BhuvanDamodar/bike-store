@@ -12,5 +12,4 @@ public class BikeStoreRepoImpl implements BikeStoreCustomRepo {
     private  EntityManager entityManager;
 
 
-
 }
